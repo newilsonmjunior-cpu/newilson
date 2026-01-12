@@ -1,0 +1,14 @@
+[build]
+  publish = "/"
+  command = ""
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Redirect example (descomente se precisar)
+# [[redirects]]
+#   from = "/old-path"
+#   to = "/new-path"
+#   status = 301
